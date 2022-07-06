@@ -1,6 +1,5 @@
-# What is a Heap?
-# A heap is like a tree, but it is normally implemented
-# as a list.
+# GEEK info
+# A heap is like a tree, but it is normally implemented as a list.
 # With a heap every row must be complete. This means there
 # must be a value in each node except for in the last row
 # Parent nodes are larger than children, but unlike with a
@@ -10,8 +9,8 @@
 # Heaps are slow when it comes to traversal & searching
 
 # How Removal Works
-# We pop off the top value and replace it with the lowest
-# Then we percolate that value down as long as its value
+# to pop off the top value and replace it with the lowest
+# Then to percolate that value down as long as its value
 # is greater than other values
 
 # How Insertion Works
@@ -89,7 +88,7 @@ class Heap:
         # Gets the top node in the list, the value that will be popped out of heap
         top = self.the_list[index]
 
-        # We don't have to check the bottom row
+        # don't have to check the bottom row
         while index < self.current_size / 2: #indext reolation to each other
             # Gets the index for the left & right child
             left_child = 2 * index + 1 #"recursion" will occure, thus it start on the 2-layer of heap 1/2, after 1 iteration the search go deepter into the subtrees of the heap
@@ -115,7 +114,7 @@ class Heap:
             # Set the index to that largest node
             index = larger_child #swap, then go to while again
 
-        # After we finish cycling assign the top value
+        # After finish cycling assign the top value
         self.the_list[index] = top
 
 
