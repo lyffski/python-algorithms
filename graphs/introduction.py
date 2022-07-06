@@ -1,3 +1,4 @@
+# GEEK info
 # Graphs are data structures similar to trees. They differ
 # in that graphs have a shape representative of what they model.
 
@@ -8,9 +9,9 @@
 # Graphs don't have fixed organization like trees. Trees have
 # a maximum of 2 children, but with graphs each vertex can
 # connect to any number of other vertices.
+# GEEK END
 
-
-# 4. This is the custom stack used with the Depth First Search
+# This is the custom stack used with the Depth First Search
 class MyStack:
     def __init__(self, size):
         self.size = size
@@ -103,7 +104,7 @@ class Graph:
         self.vertex_list[self.vertex_count] = Vertex(name)
         self.vertex_count += 1
 
-    # We will use an adjacency matrix that defines whether
+    # program use an adjacency matrix that defines whether
     # an edge lies between 2 vertices
     # Each row &column represents a single vertex and
     # a 1 lies in a cell if vertices connect
