@@ -1,12 +1,6 @@
-# Here I'll show you how to work with SQLite databases
-# in Python
 
-# A database makes it easy for you to organize your
-# data for storage and fast searching
 
-# I show how to install SQLite and use it in a previous video
-
-# You need the SQLite module to use it
+# need SQLite module to use it
 import sqlite3
 import sys
 import csv
@@ -45,13 +39,13 @@ def print_db():
 
 
 # execute() executes a SQL command
-# We organize our data in tables by defining their
+# to organize the data in tables by defining their
 # name and the data type for the data
 
-# We define the table name
+# you define the table name
 # A primary key is a unique value that differentiates
 # each row of data in our table
-# The primary key will auto increment each time we
+# The primary key will auto increment each time program
 # add a new Employee
 # If a piece of data is marked as NOT NULL, that means
 # it must have a value to be valid
@@ -72,7 +66,7 @@ try:
 except sqlite3.OperationalError as e: #e to recieve form machine, the details and "explentaion" why exeactly the tabel couldnt be created etc
     print("Table couldn't be created :", str(e)) # thgi info must be casted into str() and thus printed into the terminal console 
 
-# To insert data into a table we use INSERT INTO
+# To insert data into a table you use INSERT INTO
 # followed by the table name and the item name
 # and the data to assign to those items
 db_conn.execute("INSERT INTO employees(f_name, l_name, age, address, salary, hire_date) VALUES ('Derek', 'Banas', 43, '123 Main St', 500000, date('now'));")
