@@ -8,7 +8,7 @@
 # using a calculation, we can reverse the calculation
 # to find the correct index.
 
-# We have to take care that the unique key (Index) fits
+# to take care that the unique key (Index) fits
 # in the list and that it doesn't overwrite other data.
 
 
@@ -41,7 +41,7 @@ class HashFunction:
                 # If we get to the end of the list (hash-table length) go to index 0, done be mod list_size
                 index %= self.list_size
 
-            # We know we found an index where we can store, thus an defualt indext unstted -1
+            # an index to be found where program can store, thus an defualt indext unsetted -1
             self.the_list[index] = k
         return self.the_list
 
@@ -64,10 +64,10 @@ class HashFunction:
             # If not found look in next index
             list_index_hash += 1
 
-            # If we get to the end of the list go to index 0
+            # If get to the end of the list go to index 0
             list_index_hash %= self.list_size
 
-        # If we are here that means we couldn't find it
+        # If here, that means program couldn't find it
         return False
 
 
@@ -80,7 +80,7 @@ hash_table_2 = HashFunction(31) #31 is size, and size msut be ALWAYS a prime num
 str_list_2 = ["100", "510", "170", "214", "268", "398",
               "235", "802", "900", "723", "699", "1", "16",
               "999", "890", "725", "998", "990", "989", "984",
-              "320", "321", "400", "415", "450", "50", "660", "624"]
+              "320", "321", "400", "415", "450", "50", "660", "624"] #appednig the values to hashtables
 x = hash_table_2.hash_func_2(str_list_2)
 # Print the new list with indexes
 for i in range(hash_table_2.list_size):
